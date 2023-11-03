@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Playlist de música feito com JavaScript, HTML e CSS">
+    <script src="https://kit.fontawesome.com/502895c7df.js" crossorigin="anonymous"></script>
+    <meta name="author" content="Bernardo Prieto">
+    <link rel="shortcut icon" href="assets/walkmanicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Walkman</title>
+</head>
+<body>
+    <div class="container ">
+        <div class="top">
+            <i class="fas fa-bars menu-btn"></i>  
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="cover-image"></div>
+        <div class="player-body"></div>
+
+        <div class="list-wrapper">
+            <table class="list" id="playlist">
+                <tr class="song">
+                    <td class="no">
+                        <h5>1</h5>
+                    </td>
+                    <td class="title">
+                        <h6>Song Title</h6>
+                        
+                    </td>
+                    <td class="length">
+                        <h5>2:03</h5>
+                    </td>
+                    <td>
+                        <i class="fas fa-heart"></i>
+                    </td>
+                </tr>
+                
+                </tr>
+            </table>
+        </div>
+
+        <div class="bar">
+            <div class="dot"></div>
+            <div class="time">
+                <div class="current-time">0:00</div>
+                <div class="duration">0:00</div>
+            </div>
+        </div>
+
+        <div class="info">
+            <h2>song title</h2>
+            <h3>artist</h3>
+        </div>
+
+        <div class="controls">
+            <i class="fas fa-backward" id="prev"></i>
+            <i class="fas fa-play" id="playPause"></i>
+            <i class="fas fa-forward" id="next"></i>
+        </div>
+
+        <div class="more-controls">
+            <i class="fas fa-heart" id="current-favourite"></i>
+            <i class="fas fa-random" id="shuffle"></i>
+            <i class="fas fa-repeat" id="repeat"></i>
+            <i class="fas fa-gear" id="options"></i>
+        </div>
+        <p class="current-song-title">Song Title</p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
